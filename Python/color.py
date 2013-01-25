@@ -48,7 +48,7 @@ max_value = 0
 # unique county id, 	state number,   county number,  county (plane text),    state, 	year,   total population,   employed, 	unemployed,	percent unemployed
 # CN250250,				25,				025,			"Suffolk County",    	"MA",  	2009,   "361,350", 		    "327,847",	"33,503", 	9.3
 
-reader = csv.reader(open('unemployment09.csv'), delimiter=",")
+reader = csv.reader(open('../commonFiles/unemployment09.csv'), delimiter=",")
 for row in reader:
     try:
         full_fips = row[1] + row[2]	 # creates the FIPS number by conact Suffolk is 25025
@@ -58,7 +58,7 @@ for row in reader:
         pass
 
 
-svg = open('unemployment.svg', 'r').read()  # Load the SVG map
+svg = open('../commonFiles/unemployment.svg', 'r').read()  # Load the SVG map
 soup = BeautifulSoup(svg)  # Load into Beautiful Soup
 paths = soup.findAll('path')  # Find counties
 notCounties = ["State_Lines", "separator"]  # Things that aren't counties
