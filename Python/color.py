@@ -23,7 +23,7 @@
 # terminal. You may need to use sudo.
 
 # To run just type python color.py in terminal when in the same directory
-# as the color.py, unemployment.svg and unemployment09.
+# as color.py.
 
 
 import csv
@@ -64,6 +64,8 @@ paths = soup.findAll('path')  # Find counties
 notCounties = ["State_Lines", "separator"]  # Things that aren't counties
 
 # Color the counties based on unemployment rate
+
+def colors
 for path in paths:
     if path['id'] not in notCounties:
         # pass
@@ -72,15 +74,15 @@ for path in paths:
         except:
             continue
 
-        if rate > 10:
+        if rate > 15:
             color = colors[5]  # Remember those colors we defined up at the top?
-        elif rate > 8:
+        elif rate > 12:
             color = colors[4]
-        elif rate > 6:
+        elif rate > 9:
             color = colors[3]
-        elif rate > 4:
+        elif rate > 6:
             color = colors[2]
-        elif rate > 2:
+        elif rate > 3:
             color = colors[1]
         else:
             color = colors[0]
