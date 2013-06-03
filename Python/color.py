@@ -1,13 +1,7 @@
 #
 #
-# This file by @ffrandias @h im if you have a question.
+# This file by @ffrandias @ him if you have a question.
 # you're free to do as you like with this
-#
-#
-# Great place to keep going:
-# http://www.infochimps.com/tags/fips
-# http://quickfacts.census.gov/qfd/download_data.html
-#
 #
 #
 # Content heavily influenced by Nathan Yau @ flowingdata.com
@@ -15,7 +9,12 @@
 # http://flowingdata.com/2009/11/12/how-to-make-a-us-county-thematic-map-using-free-tools/
 #
 #
-##########################Get on with it###############################
+# Great place to keep going:
+# http://www.infochimps.com/tags/fips
+# http://quickfacts.census.gov/qfd/download_data.html
+#
+#
+########################## Get on with it ###############################
 
 
 # if you do not have Beatiful soup already installed you can install it by
